@@ -1,0 +1,29 @@
+function f1(){
+	
+	var str = '<table>';
+for(i=1;i<=25;i++){
+    str = str + '<tr><td>Apple' + i + '</td></tr>';
+	
+}
+    str = str +'</table>';
+
+    document.getElementById('res').innerHTML = str;
+}
+
+
+function f2(){
+	var num1 = document.getElementById('txt1').value;
+	var num2 = document.getElementById('txt2').value;
+	
+	
+	var str = '<table>'
+for(i=parseInt(num1);i<=parseInt(num2);i++){
+str = str + '<tr><td>' + (i*1) + '</td><td>' + (i*2) +'</td><td>' + (i*3) +'</td></tr>';
+
+
+}
+
+str = str +'</table>';
+document.getElementById('res').innerHTML = str;
+
+}
